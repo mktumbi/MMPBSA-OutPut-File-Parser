@@ -12,9 +12,9 @@ args = parser.parse_args()
 fin = open (args.input, "r")
 all = fin.read().split('\n')
 
-VDWAALS =  all[83].split()[1]  #Will extract 
-EEL =  all[84].split()[1]
-EGB =  all[85].split()[1]
+VDWAALS =  all[83].split()[1]  #Will extract vdW energy contribution.
+EEL =  all[84].split()[1]      #Will extract Total Electrostatic energy contribution.
+EGB =  all[85].split()[1]      #Will extract Total GB Electrostatics Solvation parameters .
 ESURF =  all[86].split()[1]
 GBTOT =  all[92].split()[4]
 EPB =  all[147].split()[1]
